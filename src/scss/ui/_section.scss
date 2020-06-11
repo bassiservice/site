@@ -1,0 +1,54 @@
+@import "../functions";
+@import "../variables";
+
+@import "~bulma/sass/utilities/mixins";
+
+.section {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $dark;
+  }
+  h1 {
+    @include touch {
+      font-size: $size-4;
+    }
+  }
+  p {
+    margin-top: $size-7;
+  }
+  .column {
+    background-color: rgba($light, 0.9);
+  }
+  .readmore {
+    margin-top: $size-5;
+  }
+  &.is-dark {
+    color: $light;
+    background-color: $dark;
+    a {
+      color: $light;
+    }
+    strong {
+      color: $light;
+    }
+    .column {
+      background-color: rgba($dark, 0.9);
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $light;
+    }
+    .button {
+      background-color: $dark;
+      color: $light;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@import "../variables";
+
+.logo {
+  width: 137px;
+  height: 102px;
+  path {
+    fill: $primary-invert;
+    &.selected {
+      fill: $primary;
+    }
+  }
+}

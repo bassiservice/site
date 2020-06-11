@@ -1,0 +1,18 @@
+@import "../variables";
+
+.canvas-wrapper {
+  overflow: hidden;
+  min-height: 50vh;
+  canvas {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    opacity: 0.3;
+  }
+  .section {
+    margin-top: $size-2;
+    margin-bottom: $size-2;
+    padding-top: $size-1 * 2;
+    padding-bottom: $size-1 * 2;
+  }
+}

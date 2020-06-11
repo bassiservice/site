@@ -1,0 +1,22 @@
+@import "../../variables";
+
+.page-main {
+  padding-top: $size-1;
+  padding-bottom: $size-1;
+  p {
+    margin-bottom: $size-7;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: $weight-bold;
+    letter-spacing: $size-7;
+    margin-bottom: $size-7 / 2;
+  }
+  li {
+    padding-bottom: $size-7;
+  }
+}

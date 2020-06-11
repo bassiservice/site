@@ -1,0 +1,31 @@
+@import "../../variables";
+
+@import "~bulma/sass/utilities/mixins";
+
+.navbar {
+  .navbar-burger {
+    color: $light;
+  }
+  .navbar-menu {
+    .navbar-item {
+      border-bottom: 4px solid $navbar-background-color;
+      &:hover {
+        border-bottom-color: $primary;
+        @include touch {
+          background-color: $light;
+          color: $dark;
+        }
+      }
+      &.is-active {
+        @include touch {
+          background-color: $primary;
+        }
+      }
+      @include touch {
+        border-bottom-width: 0;
+        background-color: $dark;
+        color: $light;
+      }
+    }
+  }
+}
