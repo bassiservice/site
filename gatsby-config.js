@@ -118,6 +118,11 @@ module.exports = {
       resolve: `@pittica/gatsby-plugin-seo`,
       options: {
         image: `/share.jpg`,
+        socials: {
+          facebook: {
+            app: `1326198567495083`
+          }
+        }
       },
     },
     `gatsby-plugin-offline`,
