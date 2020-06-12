@@ -11,12 +11,12 @@ module.exports = {
       language: `it`,
       culture: `IT`,
     },
-    siteUrl: `https://bassiservice.it/`,
+    siteUrl: process.env.SITE_URL,
     organization: {
       company: process.env.SITE_COMPANY,
       address: `Via Caduti Sul Lavoro, 12`,
-      url: `https://bassiservice.it/`,
-      logo: `https://bassiservice.it/logo.png`,
+      url: process.env.SITE_URL,
+      logo: `https://bassiservice.it/logo.jpg`,
       zipCode: `48026`,
       city: `Russi`,
       province: `RA`,
@@ -126,5 +126,36 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-iubenda-cookie-footer`,
+      options: {
+        iubendaOptions: {
+          "consentOnContinuedBrowsing": false,
+          "whitelabel": false,
+          "lang": "it",
+          "siteId": 1927637,
+          "cookiePolicyId": 24429738,
+          "cookiePolicyUrl": "https://bassiservice.it/cookies",
+          "cookiePolicyInOtherWindow": true,
+          "banner": {
+            "acceptButtonDisplay": true,
+            "customizeButtonDisplay": false,
+            "position": "float-bottom-center",
+            "brandBackgroundColor": process.env.COLOR_BACKGROUND,
+            "brandTextColor": process.env.COLOR_BACKGROUND,
+            "acceptButtonColor": process.env.COLOR_PRIMARY,
+            "acceptButtonCaptionColor": process.env.COLOR_SECONDARY,
+            "customizeButtonColor": process.env.COLOR_BACKGROUND,
+            "customizeButtonCaptionColor": process.env.COLOR_SECONDARY,
+            "rejectButtonColor": process.env.COLOR_PRIMARY,
+            "rejectButtonCaptionColor": process.env.COLOR_SECONDARY,
+            "textColor": process.env.COLOR_SECONDARY,
+            "backgroundColor": process.env.COLOR_BACKGROUND,
+            "logo": "https://bassiservice.it/logo-banner-negative.png",
+            "closeButtonDisplay": false
+          }
+        }
+      }
+    }
   ],
 }
