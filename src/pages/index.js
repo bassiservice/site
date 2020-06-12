@@ -40,7 +40,7 @@ const IndexPage = ({ location }) => {
         />
         <About section={true} location="/about" />
       </CanvasWrapper>
-      <Services dark={true} section={true} location="/service" />
+      <Services dark={true} section={true} location="/services" />
       <CanvasWrapper>
         <LedwallCanvas
           background={site.siteMetadata.theme.background}

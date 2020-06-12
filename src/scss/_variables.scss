@@ -1,4 +1,4 @@
-$grey-darker: rgb(24, 24, 24) !default;
+$grey-darker: rgb(24, 24, 24);
 $white: rgb(255, 255, 255);
 $green: rgb(6, 166, 166);
 $dark: $grey-darker;
@@ -9,7 +9,10 @@ $info: $grey-darker;
 $title-color: $primary;
 $link: $primary;
 $family-sans-serif: "Raleway", sans-serif;
+$title-family: $family-sans-serif;
+$family-primary: $family-sans-serif;
 $family-secondary: $family-sans-serif;
+$body-family: $family-sans-serif;
 $weight-light: 300;
 $weight-normal: 400;
 $weight-medium: 500;
