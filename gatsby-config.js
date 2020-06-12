@@ -4,9 +4,9 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: process.env.SITE_NAME,
+    title: process.env.SITE_TITLE,
     author: process.env.SITE_COMPANY,
-    description: process.env.SITE_NAME,
+    description: process.env.SITE_TITLE,
     locale: {
       language: `it`,
       culture: `IT`,
@@ -75,7 +75,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: process.env.SITE_NAME,
+        name: process.env.SITE_TITLE,
         short_name: process.env.SITE_NAME,
         start_url: `/`,
         background_color: process.env.COLOR_BACKGROUND,
