@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "author": "Lucio Benini <info@pittica.com>",
   "dependencies": {
+    "@emotion/core": "^10.0.28",
     "@mdx-js/mdx": "^1.6.5",
     "@mdx-js/react": "^1.6.5",
     "@pittica/gatsby-plugin-canvas-animations": "^1.2.1",
