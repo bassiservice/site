@@ -9,7 +9,7 @@ import logoPositive from "../../images/logo-positive.svg"
 import logoNegative from "../../images/logo-negative.svg"
 
 const Footer = ({ dark }) => {
-  const { site } = useStaticQuery(
+  const { site, file } = useStaticQuery(
     graphql`
       query {
         site {
@@ -28,10 +28,13 @@ const Footer = ({ dark }) => {
             }
           }
         }
+        file: file(name: {eq: "124-04082017"}, ext: {eq: ".pdf"}) {
+          publicURL
+        }
       }
     `
   )
-
+  
   const { company, address, zipCode, city, province, country, email, taxId, vatId, registryId } = site.siteMetadata.organization
   let tax = ""
 
@@ -77,6 +80,9 @@ const Footer = ({ dark }) => {
             </div>
           </div>
           <div className="column">
+            <ul>
+              <li><a href={file.publicURL}>Obblighi informativi ai sensi della Legge n. 124 del 04/08/2017</a></li>
+            </ul>
           </div>
         </div>
       </div>

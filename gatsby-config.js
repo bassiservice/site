@@ -34,12 +34,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-plugin-emotion`,
-      options: {
-        plugins: []
-      }
-    },
+    `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
@@ -60,6 +55,13 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/content/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `documents`,
+        path: `${__dirname}/content/documents`,
       },
     },
     `gatsby-transformer-sharp`,
