@@ -1,10 +1,16 @@
-@import "../../variables";
+@import "../variables";
 
 @import "~bulma/sass/utilities/mixins";
 
 .navbar {
   .navbar-burger {
     color: $light;
+  }
+  .navbar-logo {
+    align-items: center;
+    display: flex;
+    line-height: 1.5;
+    padding: ($size-6 / 2) $size-7;
   }
   .navbar-menu {
     .navbar-item {

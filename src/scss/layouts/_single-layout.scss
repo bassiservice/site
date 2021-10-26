@@ -48,4 +48,11 @@
       font-size: $size-7;
     }
   }
+  main {
+    padding-top: $size-1;
+    padding-bottom: $size-1;
+    p {
+      margin-bottom: $size-7;
+    }
+  }
 }
