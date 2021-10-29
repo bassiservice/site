@@ -5,10 +5,7 @@ import CanvasWrapper from "../components/ui/canvas-wrapper"
 import SectionBlock from "../components/ui/section-block"
 import SingleLayout from "../layouts/single-layout"
 
-import {
-  LedwallCanvas,
-  CubeCanvas,
-} from "@pittica/gatsby-plugin-canvas-animations"
+import { Ledwall, Cube } from "@pittica/gatsby-plugin-canvas-animations"
 
 export default function IndexPage({
   data: {
@@ -66,7 +63,7 @@ export default function IndexPage({
     >
       <div ref={element => setContainer(element)}>
         <CanvasWrapper>
-          <LedwallCanvas
+          <Ledwall
             background={theme.background}
             primary={theme.primary}
             secondary={theme.secondary}
@@ -83,7 +80,7 @@ export default function IndexPage({
           {services.excerpt}
         </SectionBlock>
         <CanvasWrapper>
-          <LedwallCanvas
+          <Ledwall
             background={theme.background}
             primary={theme.primary}
             secondary={theme.secondary}
@@ -101,14 +98,14 @@ export default function IndexPage({
           title={mission.title}
           side={
             <div className="ui-effects">
-              <CubeCanvas color={theme.primary} background={theme.background} />
+              <Cube color={theme.primary} background={theme.background} />
             </div>
           }
         >
           {mission.excerpt}
         </SectionBlock>
         <CanvasWrapper>
-          <LedwallCanvas
+          <Ledwall
             background={theme.background}
             primary={theme.primary}
             secondary={theme.secondary}
