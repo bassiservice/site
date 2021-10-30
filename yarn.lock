@@ -1834,11 +1834,12 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@pittica/gatsby-plugin-canvas-animations@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@pittica/gatsby-plugin-canvas-animations/-/gatsby-plugin-canvas-animations-2.0.0.tgz#d05acd7beeb3074a024b014c27bcbb95e8ed9f53"
-  integrity sha512-nIA2EuT5r31480H2kM35QPqrl3Sphqlg9p7Tr5ARbuqqyTkNpfbV+kBYdqDItxXVs0GtG2dp5NjUP3txOw+Axg==
+"@pittica/gatsby-plugin-canvas-animations@^2.0.3":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@pittica/gatsby-plugin-canvas-animations/-/gatsby-plugin-canvas-animations-2.0.3.tgz#fe2eaf49a4377042407a4296e1d62e1335a5fc76"
+  integrity sha512-Cl5eXaeCAvCvKO+el9sunp8TQkd4PjEp55jSPTSkXmd1nSV2alf3jjRHW9S5NHvtXYT6d0tEuVf7H+2SHYPoQw==
   dependencies:
+    "@pittica/gatsby-plugin-utils" "^2.0.1"
     gl-mat4 "^1.2.0"
     prop-types "^15.7.2"
     react "^17.0.2"
@@ -1864,25 +1865,21 @@
     react "^17.0.2"
     react-dom "^17.0.2"
 
-"@pittica/gatsby-plugin-seo@^3.0.3":
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/@pittica/gatsby-plugin-seo/-/gatsby-plugin-seo-3.0.3.tgz#ec0550be553817a0d9819f792f5bbb06a34f83ce"
-  integrity sha512-SnsbIGQnFyLHQiHoKw3ysBlFJ7FVzESubQREYvsk5zJCPYy+sdW6km7BwTaV253zNF2HhWtYFEZ6xuyM00h4FA==
+"@pittica/gatsby-plugin-seo@^3.0.5":
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/@pittica/gatsby-plugin-seo/-/gatsby-plugin-seo-3.0.5.tgz#28f814e3b43493e29e2ddff45887ddc148d7895d"
+  integrity sha512-nDGBPzF/4iYrvRScBqu3lFREXAzrcJ5KWz+zKqf0Gad0MQ9IRGSUb+UJ6URfwwYjkdHtxMfN0vKFFUfhm9OMtw==
   dependencies:
-    "@pittica/gatsby-plugin-utils" "^1.1.1"
+    "@pittica/gatsby-plugin-utils" "^2.0.1"
     gatsby-plugin-react-helmet "^5.0.0"
     prop-types "^15.7.2"
     react "^17.0.2"
     react-dom "^17.0.2"
 
-"@pittica/gatsby-plugin-utils@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@pittica/gatsby-plugin-utils/-/gatsby-plugin-utils-1.1.1.tgz#ac0b60ff0e39143e3209b81447512b589d2a17db"
-  integrity sha512-DQVVaYVDLiUsu3rYwH/PjbkQcyY90jAMFj19zHifx0MuXA8XvQF47VLsuK3moKfte53T0B/59WjAITbPzJJBsA==
-  dependencies:
-    prop-types "^15.7.2"
-    react "^17.0.2"
-    react-dom "^17.0.2"
+"@pittica/gatsby-plugin-utils@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@pittica/gatsby-plugin-utils/-/gatsby-plugin-utils-2.0.1.tgz#37907b22bdf3ab9d410dc7899f0e381b3fc763e3"
+  integrity sha512-E6g1n0fqjlhsJ7gc1DBnvvHJfdsJft6+ST3N42ceqoY37EDA0xxHuSEYi2CKah2Vl/QxyOYZ9z/jkcICKOgFBA==
 
 "@pittica/scss-functions@^1.1.1":
   version "1.1.1"
@@ -3043,10 +3040,10 @@ babel-plugin-remove-graphql-queries@^4.0.0:
     "@babel/runtime" "^7.15.4"
     gatsby-core-utils "^3.0.0"
 
-babel-plugin-remove-graphql-queries@^4.1.0-next.0:
-  version "4.1.0-next.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-remove-graphql-queries/-/babel-plugin-remove-graphql-queries-4.1.0-next.0.tgz#671e8acadf72e463649fad32496192a3cee4a881"
-  integrity sha512-TsH2vw+MiAUIPzV2BgxgLQXgPcNZTRuVv0qNCyY3rNneAu9DBeaWlwJw+PS5x/QA0qULhQnee0it6bgOZzjENA==
+babel-plugin-remove-graphql-queries@^4.1.0-next.1:
+  version "4.1.0-next.1"
+  resolved "https://registry.yarnpkg.com/babel-plugin-remove-graphql-queries/-/babel-plugin-remove-graphql-queries-4.1.0-next.1.tgz#fc95a27ae33547578b989b26155ec6bb8b8c2f8e"
+  integrity sha512-Ejca426ZyJ1F3b6owGPqgix51mkKbi+9UzmWkivi8aIV7qYGOzIkz+FpWF6TPCchdO5TLt7Nu82gRy8xJVDiTw==
   dependencies:
     "@babel/runtime" "^7.15.4"
     gatsby-core-utils "^3.1.0-next.0"
@@ -5954,17 +5951,17 @@ gatsby-plugin-google-analytics@^4.0.0:
     minimatch "3.0.4"
     web-vitals "^1.1.2"
 
-gatsby-plugin-image@^2.1.0-next.0:
-  version "2.1.0-next.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-image/-/gatsby-plugin-image-2.1.0-next.0.tgz#636e315836d53de89efff90f88391b6b4fe7ad91"
-  integrity sha512-VoIQ8rcv1gXx+m+XnjGdFRIuXQW3Sy1q3ELZexC3p9vfMz9rrUiwhBesite0ILu1T9CZol6l45F6JoQ/AMY99g==
+gatsby-plugin-image@^2.1.0-next.2:
+  version "2.1.0-next.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-image/-/gatsby-plugin-image-2.1.0-next.2.tgz#d8c74dcc4e4dd3c96942960a3315edac0cc1c32a"
+  integrity sha512-yRIiuPmcypETZyQxeCOIaI7MIV018v31p6VmSkVG1XxMXEzx0eoJRDQNoLu/4BRlveu+rHSM9D2FzhMYKRSL8A==
   dependencies:
     "@babel/code-frame" "^7.14.0"
     "@babel/parser" "^7.15.5"
     "@babel/runtime" "^7.15.4"
     "@babel/traverse" "^7.15.4"
     babel-jsx-utils "^1.1.0"
-    babel-plugin-remove-graphql-queries "^4.1.0-next.0"
+    babel-plugin-remove-graphql-queries "^4.1.0-next.1"
     camelcase "^5.3.1"
     chokidar "^3.5.2"
     common-tags "^1.8.0"
