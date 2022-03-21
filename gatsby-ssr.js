@@ -1,8 +1,6 @@
 import React from "react"
 
-export { wrapRootElement } from "./gatsby-browser"
-
-export const onRenderBody = ({ setHtmlAttributes, setHeadComponents }) => {
+export function onRenderBody({ setHtmlAttributes, setHeadComponents }) {
   setHtmlAttributes({
     itemScope: true,
     itemType: "http://schema.org/WebPage",

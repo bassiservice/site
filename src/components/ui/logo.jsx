@@ -1,10 +1,10 @@
 import React from "react"
-import classNames from "classnames"
 import PropTypes from "prop-types"
+import classNames from "classnames"
 
 import "../../scss/ui/_logo.scss"
 
-export default function Logo({ selected }) {
+export default function Logo({ selected, className }) {
   return (
     <svg
       version="1.1"
@@ -12,7 +12,7 @@ export default function Logo({ selected }) {
       x="0px"
       y="0px"
       viewBox="0 0 640 480"
-      className="logo"
+      className={className}
     >
       <path
         className={classNames({ selected: selected === 6 })}
@@ -50,8 +50,10 @@ export default function Logo({ selected }) {
 
 Logo.propTypes = {
   selected: PropTypes.number,
+  className: PropTypes.string,
 }
 
 Logo.defaultProps = {
   selected: 1,
+  className: "logo",
 }

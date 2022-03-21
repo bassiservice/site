@@ -14,9 +14,16 @@
   }
   .navbar-menu {
     .navbar-item {
-      border-bottom: 4px solid $navbar-background-color;
+      span {
+        border-bottom: 4px solid $navbar-background-color;
+      }
       &:hover {
-        border-bottom-color: $primary;
+        span {
+          border-bottom-color: $primary;
+          @include touch {
+            border-bottom-color: $light;
+          }
+        }
         @include touch {
           background-color: $light;
           color: $dark;

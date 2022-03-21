@@ -37,14 +37,17 @@ export default function SingleLayout({
   )
 }
 
-Footer.propTypes = {
+SingleLayout.propTypes = {
   fixedMenu: PropTypes.bool,
   footerDark: PropTypes.bool,
   title: PropTypes.string,
   description: PropTypes.string,
+  children: PropTypes.any,
+  location: PropTypes.object,
+  position: PropTypes.any,
 }
 
-Footer.defaultProps = {
+SingleLayout.defaultProps = {
   fixedMenu: false,
   footerDark: true,
 }
